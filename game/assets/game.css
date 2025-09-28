@@ -1,0 +1,95 @@
+:root {
+  --primary: #4a90e2;
+  --success: #28a745;
+  --danger: #dc3545;
+  --dark: #2c3e50;
+  --light: #f8f9fa;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 350px;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.balance {
+  color: var(--dark);
+}
+
+.attempts {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.wheels {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.wheel {
+  width: 60px;
+  height: 60px;
+  margin: 0 5px;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  background: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.controls input {
+  width: 60px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+button.play {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 1.1em;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.play:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.msg {
+  margin-top: 15px;
+  font-weight: bold;
+}

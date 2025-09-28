@@ -1,0 +1,49 @@
+/* =======================
+   Lotto Grande Theme
+   ======================= */
+:root {
+  --primary: #4a90e2;
+  --secondary: #6c757d;
+  --light: #f8f9fa;
+  --dark: #2c3e50;
+  --success: #28a745;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --info: #17a2b8;
+}
+
+body {
+  background-color: var(--light);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: var(--dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dark mode overrides */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar,
+body.dark-mode footer {
+  background-color: #1f2937 !important;
+  border-color: rgba(255,255,255,0.1);
+}
+
+body.dark-mode .table {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode .list-group-item {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
