@@ -1,0 +1,23 @@
+# Composer dependencies
+/vendor/
+
+# Environment files
+.env
+
+# Logs and reports
+logs/
+*.log
+*.txt
+
+# Cache files
+*.cache
+*.tmp
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# PHP specific
+phpunit.xml
