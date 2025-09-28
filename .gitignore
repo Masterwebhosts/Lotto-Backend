@@ -1,23 +1,42 @@
-# Composer dependencies
-/vendor/
-
-# Environment files
-.env
-
-# Logs and reports
-logs/
-*.log
-*.txt
-
-# Cache files
-*.cache
-*.tmp
-
-# OS / Editor files
+# ============================
+# OS / Editor
+# ============================
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/
 
-# PHP specific
+# ============================
+# PHP / Composer
+# ============================
+/vendor/
+composer.lock
+
+# ============================
+# Environment & Config
+# ============================
+.env
+*.local
+config/*.local.php
+
+# ============================
+# Logs & Cache
+# ============================
+logs/
+*.log
+storage/
+cache/
+
+# ============================
+# PHPUnit / Testing
+# ============================
 phpunit.xml
+coverage/
+tests/_output/
+
+# ============================
+# Node / Frontend (لو عندك npm أو yarn)
+# ============================
+node_modules/
+package-lock.json
+yarn.lock
